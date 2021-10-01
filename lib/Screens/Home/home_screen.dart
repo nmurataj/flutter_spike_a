@@ -28,9 +28,9 @@ class HomeScreen extends StatelessWidget {
             decoration: BoxDecoration(
               boxShadow: [
                 BoxShadow(
-                  offset: Offset(1380, 0),
-                  blurRadius: 50,
-                  color: Colors.black.withOpacity(0.9),
+                  offset: Offset(MediaQuery.of(context).size.width * 0.67, 0),
+                  blurRadius: 20,
+                  color: Colors.black.withOpacity(0.5),
                 ),
               ],
               image: DecorationImage(
@@ -44,9 +44,6 @@ class HomeScreen extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               CustomAppBar(),
-              Padding(
-                padding: EdgeInsets.only(top: 500, right: 0),
-              ),
               Body(),
             ],
           ),
