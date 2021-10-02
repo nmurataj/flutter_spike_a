@@ -2,7 +2,9 @@ import 'dart:html';
 import 'package:flutter_spike_a/Screens/Components/body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_spike_a/Screens/Components/app_bar.dart';
+import 'package:flutter_spike_a/Screens/Components/menu_item.dart';
 import 'package:flutter_spike_a/constant.dart';
+import 'package:flutter_spike_a/models/user.dart';
 
 //globals
 final double right = right;
