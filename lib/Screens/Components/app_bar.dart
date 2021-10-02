@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spike_a/Components/sign_up_button.dart';
+import 'package:flutter_spike_a/Services/auth.dart';
 import 'package:flutter_spike_a/constant.dart';
 
 import 'package:flutter_spike_a/Screens/Components/menu_item.dart';
 
 class CustomAppBar extends StatelessWidget {
+  final AuthService _auth = AuthService();
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -37,18 +40,19 @@ class CustomAppBar extends StatelessWidget {
             press: () {},
           ),
           MenuItem(
-            title: "About",
+            title: "Place Spot",
             press: () {},
           ),
           MenuItem(
-            title: "Spots",
+            title: "Your Spots",
             press: () {},
           ),
           MenuItem(
-            title: "Account",
-            press: () {},
+            title: "Log Out",
+            press: () async {
+              await _auth.signOut();
+            },
           ),
-          sign_up_button(),
         ],
       ),
     );

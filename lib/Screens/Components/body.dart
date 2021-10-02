@@ -15,7 +15,7 @@ class Body extends StatelessWidget {
             "Run the Feed™".toUpperCase(),
             style: Theme.of(context).textTheme.headline1?.copyWith(
                   color: kTertiaryColorL,
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.w100,
                 ),
           ),
           Text(
